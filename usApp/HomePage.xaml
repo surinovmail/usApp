@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="usApp.HomePage"
+             Title="Bosh sahifa"
+             x:Name="homename"
+             >
+    <VerticalStackLayout  Padding="30" Spacing="10">
+
+        <Entry x:Name="userentry" Placeholder="Biror narsa yozing" PlaceholderColor="CadetBlue"  VerticalOptions="Center" Keyboard="Text"/>
+        <Frame HasShadow="True" BorderColor="White" CornerRadius="30" >
+            <Label x:Name="namelbl" Text="Ismingiz" HorizontalTextAlignment="Center" FontSize="Large" FontAttributes="Italic"/>
+        </Frame>
+        <Grid ColumnSpacing="30" RowSpacing="20" Padding="30" ColumnDefinitions="Auto,Auto,Auto,Auto" RowDefinitions="Auto,Auto,Auto,Auto">
+            <Button Clicked="Tomatobtn" x:Name="Tomato" BackgroundColor="Tomato" Grid.Column="0" Grid.Row="0" />
+            <Button Clicked="Greenbtn" x:Name="Green" BackgroundColor="Green" Grid.Column="1" Grid.Row="0" />
+            <Button Clicked="Brownbtn" x:Name="Brown" BackgroundColor="Brown" Grid.Column="2" Grid.Row="0" />
+            <Button Clicked="Yellowbtn" x:Name="Yellow" BackgroundColor="Yellow" Grid.Column="3" Grid.Row="0" />
+            <Button Clicked="Orangebtn" x:Name="Orange" BackgroundColor="Orange" Grid.Column="0" Grid.Row="1" />
+            <Button Clicked="Redbtn" x:Name="Red" BackgroundColor="Red" Grid.Column="1" Grid.Row="1" />
+            <Button Clicked="Pinkbtn" x:Name="Pink" BackgroundColor="Pink" Grid.Column="2" Grid.Row="1" />
+            <Button Clicked="Purplebtn" x:Name="Purple" BackgroundColor="Purple" Grid.Column="3" Grid.Row="1" />
+            <Button Clicked="Bluebtn" x:Name="Blue" BackgroundColor="Blue" Grid.Column="0" Grid.Row="2" />
+            <Button Clicked="Blackbtn" x:Name="Black" BackgroundColor="Black" Grid.Column="1" Grid.Row="2" />
+            <Button Clicked="Chocolatebtn" x:Name="Chocolate" BackgroundColor="Chocolate" Grid.Column="2" Grid.Row="2" />
+            <Button Clicked="Greybtn" x:Name="Grey" BackgroundColor="Grey" Grid.Column="3" Grid.Row="2" />
+            <Button Clicked="Limebtn" x:Name="Lime" BackgroundColor="Lime" Grid.Column="0" Grid.Row="3" />
+            <Button Clicked="Olivebtn" x:Name="Olive" BackgroundColor="Olive" Grid.Column="1" Grid.Row="3" />
+            <Button Clicked="DarkKhakibtn" x:Name="DarkKhaki" BackgroundColor="DarkKhaki" Grid.Column="2" Grid.Row="3" />
+            <Button Clicked="DeepSkyBluebtn" x:Name="DeepSkyBlue" BackgroundColor="DeepSkyBlue" Grid.Column="3" Grid.Row="3" />
+
+
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>

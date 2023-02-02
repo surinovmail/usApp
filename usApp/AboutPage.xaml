@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="usApp.AboutPage"
+             Title="Ilova haqida"
+             x:Name="aboutname"
+             
+             >
+    
+    <VerticalStackLayout Padding="10" Spacing="20">
+
+        <Entry Placeholder="E mail ni kiriting" PlaceholderColor="CadetBlue" Keyboard="Email"/>
+        <Entry Placeholder="Parol bilan tasdiqlang" IsPassword="True" PlaceholderColor="CadetBlue" Keyboard="Default"/>
+        <Grid ColumnDefinitions="Auto,Auto" RowDefinitions="Auto" Padding="0">
+            <Editor Grid.Column="0" Grid.Row="0" Placeholder="Fikringizni yozing" PlaceholderColor="CadetBlue" Keyboard="Default" HorizontalOptions="Start" WidthRequest="310"/>
+            <Frame HasShadow="False" BorderColor="White" Grid.Column="2" Grid.Row="2" Padding="0" HeightRequest="50" WidthRequest="50" CornerRadius="45">
+            <ImageButton Aspect="Fill" Source="send.svg"/>
+            </Frame>
+        </Grid>
+        
+    </VerticalStackLayout>
+    
+</ContentPage>

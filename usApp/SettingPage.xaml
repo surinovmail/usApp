@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="usApp.SettingPage"
+             Title="Sozlamalar"
+             x:Name="settingname"
+             >
+    
+    <VerticalStackLayout Padding="30" >
+        <Grid ColumnSpacing="100" RowSpacing="20" ColumnDefinitions="Auto,Auto" RowDefinitions="Auto,Auto,Auto,Auto">
+            <Label Text="Qorong'i rejim" Grid.Column="0" Grid.Row="0"/>
+            <Switch x:Name="switchtheme" Grid.Column="1" Grid.Row="0" IsEnabled="True" HeightRequest="10"/>
+
+            <Label Text="Quvvat tejash" Grid.Column="0" Grid.Row="1"/>
+            <CheckBox Grid.Column="1" Grid.Row="1" HeightRequest="20"/>
+
+        </Grid>
+        <Label Text="Daraja" HorizontalOptions="Center"/>
+        <Slider Grid.Column="1" Grid.Row="2" MaximumTrackColor="Green"  MinimumTrackColor="Red" ThumbColor="Tomato"/>
+    </VerticalStackLayout>
+    
+</ContentPage>
